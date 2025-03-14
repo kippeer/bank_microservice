@@ -2,11 +2,14 @@ package com.example.banking.api.dto.response;
 
 import com.example.banking.core.domain.model.Transaction;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
 public class TransactionResponse {
     private Long id;
     private String sourceAccountNumber;
